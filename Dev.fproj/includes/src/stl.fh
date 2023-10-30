@@ -1,0 +1,5 @@
+def exit () {
+    asm("mov rdi, 200")
+    asm("mov rax, 60")
+    asm("syscall")
+}

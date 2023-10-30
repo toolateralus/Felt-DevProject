@@ -1,0 +1,11 @@
+flags = [
+  "DEBUG",
+  "EXECUTABLE",
+  "LINK_AGAINST_STL" 
+]
+
+main = "src/main.felt"
+
+libs = [
+  "includes/",
+]

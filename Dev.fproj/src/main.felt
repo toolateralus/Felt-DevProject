@@ -1,0 +1,9 @@
+#define TEST "This is a testing string. it has contents."
+
+def func () {
+    return 1;
+}
+
+lda : func();
+
+#run func();
