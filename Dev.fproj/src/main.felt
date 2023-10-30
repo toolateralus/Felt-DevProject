@@ -1,9 +1,7 @@
 #define TEST "This is a testing string. it has contents."
 
-def func () {
-    return 1;
+def func (int : myID, int : myID1) {
+    return func(myID + 1, myID1 + 1)
 }
 
-lda : func();
-
-#run func();
+#run func(0,0);

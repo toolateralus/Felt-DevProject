@@ -7,5 +7,5 @@ flags = [
 main = "src/main.felt"
 
 libs = [
-  "includes/",
+  "includes/", #include the standard felt libray. this doesn't fully work yet afaik
 ]

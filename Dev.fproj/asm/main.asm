@@ -9,12 +9,7 @@ _start:
 	mov rbp, rsp ;STACK_FRAME_CT 1
 	call func
 	push rax ;VAR_STACK_CT 2
-	pop rax ;VAR_STACK_CT 3
-	mov [rbp-16], rax ; VAR_DECL lda
-	sub rsp, 8 ;
-	call func
-	push rax ;VAR_STACK_CT 3
-	pop rdi ;VAR_STACK_CT 4
+	pop rdi ;VAR_STACK_CT 3
 	mov rax, 60 ;
 	syscall
 
@@ -25,7 +20,7 @@ extern func
 func:
 	push rbp ;VAR_STACK_CT 1
 	mov rbp, rsp ;STACK_FRAME_CT 2
-	mov rax, 1
+	call func
 	push rax ;VAR_STACK_CT 2
 	mov rsp, rbp ;STACK_FRAME_CT 1
 	pop rbp ;VAR_STACK_CT 3
