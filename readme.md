@@ -1,3 +1,6 @@
+# Note: This language is not publicly available.
+
+
 ## felt language :
 ### sample language development project.
 
